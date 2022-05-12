@@ -8,20 +8,21 @@ import {
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-import React from "react";
+
 
 const useStyle = makeStyles({
   component: {
-     
-    // marginLeft:"20%"
+     padding:"0 !important",
+     maxWidth:"800px !important",
+   
   },
   image: {
-      flex:1,
+      flex:1.5,
     backgroundImage: `url(${`https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png`})`,
-    height: "56vh",
+    height: "50vh",
     backgroundRepeat: "no-repeat",
     background: "#2874f0",
-    width: "350px",
+    width: "650px",
     backgroundPosition: "center 85%",
     padding:"45px 35px",
 
@@ -33,7 +34,17 @@ const useStyle = makeStyles({
   },
   Input:{
       width:"97%",
-      marginTop:"10px"
+      
+  },
+  InputBox:{
+    flex:3,
+    display:"flex",
+    flexDirection:"column",
+    justifyContent:"space-between"
+  },
+  DialogBox:{
+    maxWidth:"900px !important",
+
   }
 });
 
@@ -44,12 +55,14 @@ export default function Login({ open, setOpen }) {
   const classes = useStyle();
   return (
     <Dialog
-      style={{ width: "700px", marginLeft: "25%" }}
+      style={{ marginLeft: "20%"  }}
       open={open}
       onClose={handleClose}
+      className={classes.DialogBox}
+      maxWidth={false}
     >
       <DialogContent className={classes.component}>
-        <Box style={{ display: "flex" }}>
+        <Box style={{ display: "flex",maxWidth:"900px !important" }}>
           <Box className={classes.image}>
             <Typography variant="h5" className={classes.loginText}>
               Login
@@ -58,7 +71,7 @@ export default function Login({ open, setOpen }) {
               Get access to your Orders, Wishlist and Recommendations
             </Typography>
           </Box>
-          <Box style={{padding:"10px"}}>
+          <Box className={classes.InputBox} style={{padding:"60px 40px"} }>
             {/* <TextField></TextField> */}
             <TextField
             className={classes.Input}
@@ -70,7 +83,7 @@ export default function Login({ open, setOpen }) {
               variant="standard"
               
             />
-            <br />
+          
             <TextField
             className={classes.Input}
               id="standard-password-input"
@@ -84,10 +97,10 @@ export default function Login({ open, setOpen }) {
               Policy.
             </Typography>
 
-            <Button>Login</Button>
-            <Typography>OR</Typography>
-            <Button>Request OTP</Button>
-            <Typography>New to Flipkart? Create an account</Typography>
+            <Button variant="contained" style={{backgroundColor:"#ff5722",height:"50px",fontWeight:"600"}} >Login</Button>
+            <Typography style={{textAlign:"center"}}>OR</Typography>
+            <Button variant="outlined" style={{fontWeight:"600",height:"50px"}} >Request OTP</Button>
+            <Typography style={{textAlign:"center"}}>New to Flipkart? Create an account</Typography>
           </Box>
         </Box>
       </DialogContent>

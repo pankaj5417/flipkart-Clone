@@ -1,14 +1,7 @@
 import React from "react";
-import {
-  AppBar,
-  Toolbar,
- 
-  
-  Typography,
-  Box,
-} from "@mui/material";
+import { AppBar, Toolbar, Typography, Box } from "@mui/material";
 import SearchBar from "./SearchBar";
-import { withStyles,makeStyles } from "@mui/styles";
+import { withStyles, makeStyles } from "@mui/styles";
 import HeaderButtons from "./HeaderButtons";
 import { Link } from "react-router-dom";
 
@@ -31,8 +24,8 @@ const useStyle = makeStyles({
   component: {
     marginLeft: "12%",
     lineHeight: 0,
-    textDecoration:"none",
-    color:"#fff"
+    textDecoration: "none",
+    color: "#fff",
   },
   subHeading: {
     fontSize: 10,
@@ -61,7 +54,13 @@ function Header() {
 
             <Box className={classes.container}>
               <Typography className={classes.subHeading}>
-                Explore <Box style={{color:"yellow",fontWeight:600}} component="span">Plus</Box>
+                Explore{" "}
+                <Box
+                  style={{ color: "yellow", fontWeight: 600 }}
+                  component="span"
+                >
+                  Plus
+                </Box>
               </Typography>
               <img src={subURL} alt="" className={classes.subURL} />
             </Box>
