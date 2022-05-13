@@ -77,9 +77,9 @@ export default function Login({ open, setOpen }) {
             className={classes.Input}
 
               id="standard-password-input"
-              label="Enter email/Enter mobile No"
-              type="password"
-              autoComplete="current-password"
+              label="Enter email/Mobile Number"
+              type="text/number"
+              autoComplete=""
               variant="standard"
               
             />

@@ -30,7 +30,8 @@ export default function Navbar() {
   }, []);
 
   const getData = () => {
-    fetch(`http://localhost:3001/navData`)
+    // fetch(`http://localhost:3001/navData`)
+    fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/navData`)
       .then((d) => d.json())
       .then((res) => {
         console.log(res);

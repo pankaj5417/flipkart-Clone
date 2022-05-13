@@ -40,12 +40,12 @@ function Home() {
 
           </Box>
           
-          {/* <Slide timer={false} dealTitle="Suggested for You"/> */}
-          {/* <Slide timer={false} dealTitle="Your Favourite Deal"/> */}
-          {/* <MidSection/> */}
-          {/* <Slide timer={false} dealTitle="Discounts for You"/>
+           <Slide timer={false} dealTitle="Suggested for You"/> 
+           <Slide timer={false} dealTitle="Your Favourite Deal"/> 
+           <MidSection/> 
+           <Slide timer={false} dealTitle="Discounts for You"/>
           <Slide timer={false} dealTitle="Recommended items"/>
-          <Slide timer={true} dealTitle="Best deal"/> */}
+          <Slide timer={true} dealTitle="Best deal"/> 
 
 
 
