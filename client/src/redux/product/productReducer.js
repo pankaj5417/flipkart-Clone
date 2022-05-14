@@ -3,7 +3,7 @@ import { GET_PRODUCT_ERROR, GET_PRODUCT_LOADING, GET_PRODUCT_SUCCESS } from "./p
 const initialState={
     isLoading:false,
     isError:false,
-    productData:[]
+    productData:{}
 }
 export const productReducer=(state=initialState,{type,payload})=>{
     switch(type){
@@ -19,7 +19,7 @@ export const productReducer=(state=initialState,{type,payload})=>{
                 ...state,
                 isLoading:false,
                 isError:false,
-                productData:[...state.productData,payload]
+                productData:payload
             }
     
     case GET_PRODUCT_ERROR:
