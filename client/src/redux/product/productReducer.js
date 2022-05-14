@@ -8,7 +8,7 @@ const initialState={
 export const productReducer=(state=initialState,{type,payload})=>{
     switch(type){
         case GET_PRODUCT_LOADING:
-            return {
+            return {...state,
                 isLoading:true,
                 isError:false,
                 productData:[]
@@ -16,14 +16,16 @@ export const productReducer=(state=initialState,{type,payload})=>{
     
     case GET_PRODUCT_SUCCESS:
             return {
-                isLoading:true,
+                ...state,
+                isLoading:false,
                 isError:false,
-                productData:payload
+                productData:[...state.productData,payload]
             }
     
     case GET_PRODUCT_ERROR:
             return {
-                isLoading:true,
+                ...state,
+                isLoading:false,
                 isError:true,
                 productData:[]
             }

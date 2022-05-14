@@ -21,8 +21,9 @@ export const getProductError=(err)=>{
 export const getProductData=(id)=>async(dispatch)=>{
     try{
         dispatch(getProductLoading)
-    const res=await fetch(`http://localhost:3001/products/${id}`)
+    const res=await fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/products`)
     const data=await res.json()
+    console.log(data)
     dispatch(getProductSucces(data))
 
 

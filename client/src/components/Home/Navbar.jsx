@@ -34,7 +34,7 @@ export default function Navbar() {
     fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/navData`)
       .then((d) => d.json())
       .then((res) => {
-        console.log(res);
+      console.log(res);
         setNavData(res);
       });
   };
