@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {alpha,InputBase} from "@mui/material"
 import { makeStyles } from '@mui/styles';
 
 import {Search} from '@mui/icons-material';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { getFilteredData} from '../../redux/product/productActionCreator';
 const useStyle=makeStyles((theme)=>({
     search: {
       //  position: 'relative',
@@ -39,6 +42,28 @@ const useStyle=makeStyles((theme)=>({
 
 function SearchBar(){
 
+  const dispatch = useDispatch();
+  const { loading, err, data } = useSelector((state) => ({
+    loading: state.products.isLoading,
+    err: state.products.isError,
+    data: state.products.productData,
+  }));
+  console.log("data",data)
+
+  const [dataItem,setDataItem]=useState([data])
+
+  const handleChange=(event)=>{
+    let searchString=event.target.value.toLocaleLowerCase()
+    console.log(searchString)
+   // const filteredData=dataItem.filter(prod=>{
+     /// return data.title.shortTitle.toLocaleLowerCase().incudes(searchString)
+      
+    //})   
+    dispatch(getFilteredData(searchString))
+      //console.log("filteredData",filteredData)
+     /// setDataItem(filteredData)
+  }
+
     const classes=useStyle()
   return (
     <div className={classes.search}>
@@ -50,6 +75,7 @@ function SearchBar(){
         input: classes.inputInput,
       }}
       inputProps={{ 'aria-label': 'search' }}
+      onChange={handleChange}
     />
      <div className={classes.searchIcon}>
       <Search />

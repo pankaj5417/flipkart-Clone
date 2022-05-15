@@ -7,7 +7,9 @@ import {
   ListItemText,
   MenuItem,
   OutlinedInput,
+  Pagination,
   Select,
+  Stack,
   Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
@@ -20,27 +22,32 @@ import { getProductData } from "../../redux/product/productActionCreator";
 const useStyle = makeStyles({
   container: {
     display: "flex",
+  
     margin: "10px",
     padding: "10px",
     backgroundColor: "lightgrey",
     justifyContent: "space-between",
   },
   grid: {
-    width: "78%",
-    padding: "10px",
+    width: "80%",
+    minWidth:"500px",
+    padding: "15px",
     backgroundColor: "#fff",
     borderRadius: "5px",
+    boxSizing:"border-box"
   },
   gridcontainer: {
     width: "220px",
     textAlign: "center",
   },
   sidebar: {
-    width: "18%",
+    width: "19%",
+    minWidth:"150px",
     marginTop: "50px",
     padding: "10px",
     backgroundColor: "#fff",
     borderRadius: "5px",
+    boxSizing:"border-box"
   },
   image: {
     width: "200px",
@@ -57,7 +64,7 @@ const useStyle = makeStyles({
 });
 export default function Products() {
   const classes = useStyle();
-  const [item, setItem] = useState([]);
+  //const [item, setItem] = useState([]);
   const dispatch = useDispatch();
   const { loading, err, data } = useSelector((state) => ({
     loading: state.products.isLoading,
@@ -73,8 +80,37 @@ export default function Products() {
     "Kitchen Essential",
   ];
   const brandNames = ["ADDIDAS", "ARROW", "ROADSTAR", "KILLER"];
+  const discount=[
+    "10% and below",
+    "20% or more",
+    "30% or more",
+     "40% or more",
+     "60% or more"
+  ]
+  const customerRating=[
+    "4★ & above",
+    "3★ & above",
+    "2★ & above",
+    "1★ & above"
+    
+  ]
+  //pagination
+  const [page, setPage] = useState(1);
+  
+    const handlePage = (e,val) => {
+      console.log("value",val)
+     
+      setPage(val);
+    };
+    console.log("page",page)
+    useEffect(()=>{
+      
+      dispatch(getProductData(`${page}`))
+},[page])
+   
+  
+  //filtering
   const [personName, setPersonName] = useState([]);
-
   const handleChange = (event) => {
     const {
       target: { value },
@@ -85,6 +121,7 @@ export default function Products() {
     );
   };
   
+  //sorting
   const priceLTH=()=>{
     
     dispatch(getProductData("asc","price.cost"));
@@ -122,7 +159,7 @@ console.log("productData",data)
             sx={{ m: 1}}
             className={classes.selectBox}
           >
-            <InputLabel id="demo-multiple-name-label">Categories</InputLabel>
+            <InputLabel id="demo-multiple-name-label">CATEGORIES</InputLabel>
             <Select
               labelId="demo-multiple-name-label"
               id="demo-multiple-name"
@@ -150,7 +187,7 @@ console.log("productData",data)
             className={classes.selectBox}
           >
             <InputLabel  id="demo-multiple-checkbox-label">
-              Gender
+              GENDER
             </InputLabel>
             <Select
               labelId="demo-multiple-checkbox-label"
@@ -176,7 +213,7 @@ console.log("productData",data)
             sx={{ m: 1, }}
             className={classes.selectBox}
           >
-            <InputLabel id="demo-multiple-checkbox-label">Brand</InputLabel>
+            <InputLabel id="demo-multiple-checkbox-label">BRAND</InputLabel>
             <Select
               labelId="demo-multiple-checkbox-label"
               id="demo-multiple-checkbox"
@@ -187,6 +224,57 @@ console.log("productData",data)
               renderValue={(selected) => selected.join(", ")}
             >
               {brandNames.map((name) => (
+                <MenuItem key={name} value={name}>
+                  <Checkbox checked={personName.indexOf(name) > -1} />
+                  <ListItemText primary={name} />
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+
+          <FormControl
+            variant="standard"
+            sx={{ m: 1, }}
+            className={classes.selectBox}
+          >
+            <InputLabel id="demo-multiple-checkbox-label">DISCOUNT</InputLabel>
+            <Select
+              labelId="demo-multiple-checkbox-label"
+              id="demo-multiple-checkbox"
+              multiple
+              value={personName}
+              onChange={handleChange}
+              input={<OutlinedInput label="Gender" />}
+              renderValue={(selected) => selected.join(", ")}
+            >
+              {discount.map((name) => (
+                <MenuItem key={name} value={name}>
+                  <Checkbox checked={personName.indexOf(name) > -1} />
+                  <ListItemText primary={name} />
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+          <hr />
+
+        
+
+          <FormControl
+            variant="standard"
+            sx={{ m: 1, }}
+            className={classes.selectBox}
+          >
+            <InputLabel id="demo-multiple-checkbox-label">CUSTOMER RATINGS</InputLabel>
+            <Select
+              labelId="demo-multiple-checkbox-label"
+              id="demo-multiple-checkbox"
+              multiple
+              value={personName}
+              onChange={handleChange}
+              input={<OutlinedInput label="Gender" />}
+              renderValue={(selected) => selected.join(", ")}
+            >
+              {customerRating.map((name) => (
                 <MenuItem key={name} value={name}>
                   <Checkbox checked={personName.indexOf(name) > -1} />
                   <ListItemText primary={name} />
@@ -251,9 +339,15 @@ console.log("productData",data)
                     {item.tagline}
                   </Typography>
                 </Box>
+                
               </>
             ))}
           </Grid>
+          <hr />
+        <Stack spacing={3}>
+      <Pagination style={{marginLeft:"20%"}} page={page} onChange={handlePage}  count={10} color="primary" />
+      
+    </Stack>
         </Box>
       </Box>
     </>
