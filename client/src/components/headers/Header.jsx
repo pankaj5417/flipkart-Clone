@@ -9,6 +9,7 @@ const useStyle = makeStyles({
   header: {
     background: "#2874f0",
     height: 55,
+   // position:"relative"
   },
   logo: {
     width: 75,

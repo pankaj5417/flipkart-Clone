@@ -35,7 +35,7 @@ export const getProductData=(val,type,num)=>async(dispatch)=>{
 export const getFilteredData=(val,type,num)=>async(dispatch)=>{
     try{
         dispatch(getProductLoading)
-    const res=await fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/products?title.shortTitle=${val}`)
+    const res=await fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/products?id=${val}`)
     const data=await res.json()
     console.log("filterdDatas",data)
     dispatch(getProductSucces(data))
