@@ -18,10 +18,10 @@ export const getProductError=(err)=>{
         payload:err
     }
 }
-export const getProductData=(id)=>async(dispatch)=>{
+export const getProductData=(val,type)=>async(dispatch)=>{
     try{
         dispatch(getProductLoading)
-    const res=await fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/products`)
+    const res=await fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/products?_sort=${type}&_order=${val}`)
     const data=await res.json()
     console.log(data)
     dispatch(getProductSucces(data))
