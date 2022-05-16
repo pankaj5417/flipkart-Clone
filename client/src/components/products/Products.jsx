@@ -17,6 +17,7 @@ import { makeStyles } from "@mui/styles";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { getProductData } from "../../redux/product/productActionCreator";
 
 const useStyle = makeStyles({
@@ -307,6 +308,8 @@ console.log("productData",data)
           >
             {data?.map((item) => (
               <>
+               <Link to={`/products/${item.id}`} style={{textDecoration:"none"}}>
+
                 <Box textAlign="center" className={classes.wrapper}>
                   <img src={item.url} alt="" className={classes.image} />
                   <Typography
@@ -339,6 +342,7 @@ console.log("productData",data)
                     {item.tagline}
                   </Typography>
                 </Box>
+              </Link>
                 
               </>
             ))}

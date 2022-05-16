@@ -105,7 +105,8 @@ export default function Slide({timer,dealTitle}) {
           {
   
                   products.map(product=>(
-                      
+                    <Link to="/products" style={{textDecoration:"none"}}>
+
                       <Box textAlign="center" className={classes.wrapper}>
                           <img src={product.url} alt="" className={classes.image}/>
                           <Typography className={classes.text} style={{fontWeight:600, color:"#212121"}} >{product.title.shortTitle}</Typography>
@@ -113,6 +114,7 @@ export default function Slide({timer,dealTitle}) {
                           <Typography className={classes.text} style={{opacity:"0.6", color:"#212121"}}>{product.tagline}</Typography>
 
                       </Box>
+                      </Link>
                   ))
 
             

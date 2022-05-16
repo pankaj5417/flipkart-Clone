@@ -31,10 +31,8 @@ function Home() {
           <Banner/>
           <Box style={{display:"flex"}}>
               <Box style={{width:"83%"}}>
-                  <Link to="/products"  style={{textDecoration:"none"}}>
           <Slide timer={true} dealTitle={"Deal of the Day"}/>
                   
-                  </Link>
 
               </Box>
               <Box className={classes.rightwrapper}>
@@ -43,10 +41,8 @@ function Home() {
           </Box>
 
           </Box>
-          <Link to="/products" style={{textDecoration:"none"}}>
            <Slide timer={false} dealTitle="Suggested for You"/> 
           
-          </Link>
            <Slide timer={false} dealTitle="Your Favourite Deal"/> 
            <MidSection/> 
            <Slide timer={false} dealTitle="Discounts for You"/>
