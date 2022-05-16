@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from "./cartActionType"
+import { ADD_TO_CART, REMOVE_FROM_CART } from "./cartActionType"
 
 export const addToCart=(id,quantity)=>async(dispatch)=>{
 try{
@@ -10,3 +10,13 @@ try{
     console.log("error occured while getting cart data")
 }
 }
+
+export const removeFromCart = (id) => (dispatch, getState) => {
+    console.log(id);
+    dispatch({
+        type: REMOVE_FROM_CART,
+        payload: id
+    })
+
+    localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
+};

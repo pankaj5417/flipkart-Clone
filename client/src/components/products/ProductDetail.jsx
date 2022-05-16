@@ -8,17 +8,18 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { makeStyles } from "@mui/styles";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams ,useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import {
   ShoppingCart as Cart,
   FlashOn as Flash,
   LocalOffer as Badge,
 } from "@mui/icons-material";
+import { addToCart } from "../../redux/cart/cartActionCreator";
 
 const useStyle = makeStyles({
   productDetailContainer: {
@@ -39,6 +40,7 @@ container: {
 },
 rightContainer: {
     marginTop: 50,
+    padding:"10px",
     '& > *': {
         marginTop: 10
     }
@@ -54,7 +56,7 @@ greyTextColor: {
 },
   leftContainer: {
     minWidth: "40%",
-    width:"20%",
+    width:"60%",
 
     padding: "40px 0 0 80px",
     
@@ -82,7 +84,7 @@ greyTextColor: {
   },
   smallText: {
     fontSize: 14,
-    verticalAlign: 'baseline',
+   // verticalAlign: 'baseline',
     '& > *' :{
         fontSize: 14,
         marginTop: 10
@@ -105,15 +107,17 @@ export default function ProductDetail() {
   const params = useParams();
   const classes = useStyle();
   const dispatch = useDispatch();
+  const navigate=useNavigate()
   const { data } = useSelector((state) => ({
     loading: state.products.isLoading,
     err: state.products.isError,
     data: state.products.productData,
   }));
-
+  const { id, price, detailUrl, title } =data;
+  const [quantity,setQuantity]=useState(1)
   const addItemToCart = () => {
-    //dispatch(addToCart(id, quantity));
-    //  history.push('/cart');
+    dispatch(addToCart(id, quantity));
+      navigate.push('/cart');
   };
   const adURL =
     "https://rukminim1.flixcart.com/lockin/774/185/images/CCO__PP_2019-07-14.png?q=50";
@@ -207,9 +211,9 @@ export default function ProductDetail() {
                       purchase
                     </Typography>
                   </Box>
-                  <Table>
+                  <Table >
                     <TableBody>
-                      <TableRow className={classes.smallText}>
+                      <TableRow className={classes.smallText} style={{border:"none"}}>
                         <TableCell className={classes.greyTextColor}>
                           Delivery
                         </TableCell>
@@ -217,13 +221,13 @@ export default function ProductDetail() {
                           Delivery by {date.toDateString()} | ₹40
                         </TableCell>
                       </TableRow>
-                      <TableRow className={classes.smallText}>
+                      <TableRow className={classes.smallText} style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
                         <TableCell className={classes.greyTextColor}>
                           Warranty
                         </TableCell>
                         <TableCell>No Warranty</TableCell>
                       </TableRow>
-                      <TableRow className={classes.smallText}>
+                      <TableRow className={classes.smallText} style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
                         <TableCell className={classes.greyTextColor}>
                           Seller
                         </TableCell>
@@ -235,12 +239,12 @@ export default function ProductDetail() {
                           </Typography>
                         </TableCell>
                       </TableRow>
-                      <TableRow>
+                      <TableRow style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
                         <TableCell colSpan={2}>
                           <img src={adURL} style={{ width: 390 }} alt=""/>
                         </TableCell>
                       </TableRow>
-                      <TableRow className={classes.smallText}>
+                      <TableRow className={classes.smallText} style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
                         <TableCell className={classes.greyTextColor}>
                           Description
                         </TableCell>
