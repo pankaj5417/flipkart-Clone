@@ -1,25 +1,33 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "./cartActionType"
+import { ADD_TO_CART, GET_CART_DATA, REMOVE_FROM_CART } from "./cartActionType"
 
 const initialState={
     cartData:[]
 }
-export const cartReducer=(state=initialState,action)=>{
-    switch(action.type){
+export const cartReducer=(state=initialState,{type,payload})=>{
+    switch(type){
+       
         case ADD_TO_CART:
-            const item=action.payload;
-            const existItem=state.cartData.find(prod=>prod.id===item.id)
-            console.log(existItem)
-            if(existItem){
-                return {
-                  ...state, cartData:state.cartData.map(d=>d.product===existItem.product?item:d)
-                }
-                }else{
-                    let a={...state, cartData:[...state.cartData, item]}
-                      return a
-            }
+           
+                    return {
+            
+           
+                        ...state,
+                       
+                        cartData:payload
+                    }
+                    case GET_CART_DATA:
+           
+                        return {
+                
+               
+                            ...state,
+                           
+                            cartData:payload
+                        }         
+            
             case REMOVE_FROM_CART:
                 return {
-                    ...state, cartData:state.cartData.filter(prod=>prod.id!==action.payload)
+                    ...state, cartData:state.cartData.filter(prod=>prod.id!==payload)
                 }
                 default:
                     return state

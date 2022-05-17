@@ -8,6 +8,7 @@ import {  makeStyles } from "@mui/styles";
 import CartItem from "./CartItem";
 import TotalView from "./TotalView";
 import EmptyCart from "./EmptyCart";
+import { useParams } from "react-router-dom";
 
 const useStyle = makeStyles(theme => ({
   component: {
@@ -48,6 +49,7 @@ const useStyle = makeStyles(theme => ({
 
   export default function Cart({ match, navigate }) {
   const dispatch=useDispatch()
+  const params=useParams()
   const {data}=useSelector(state=>({
     // loading:state.cart.loading,
     // err:state.cart.err,
@@ -63,11 +65,11 @@ const useStyle = makeStyles(theme => ({
 
    
     
-    useEffect(() => {
-        if(cartItems && match.params.id !== cartItems.id)   
-            dispatch(addToCart(match.params.id));
-        console.log(cartItems);
-    }, [dispatch, cartItems, match]);
+    // useEffect(() => {
+    //     if(cartItems && params.id !== cartItems.id)   
+    //         dispatch(addToCart());
+    //     console.log(cartItems);
+    // }, [dispatch, cartItems]);
 
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id));

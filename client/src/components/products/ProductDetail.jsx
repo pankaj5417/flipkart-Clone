@@ -8,7 +8,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
@@ -19,7 +19,8 @@ import {
   FlashOn as Flash,
   LocalOffer as Badge,
 } from "@mui/icons-material";
-import { addToCart } from "../../redux/cart/cartActionCreator";
+import { addToCart, getCartData } from "../../redux/cart/cartActionCreator";
+import { getProductDetails } from "../../redux/product/productActionCreator";
 
 const useStyle = makeStyles({
   productDetailContainer: {
@@ -108,23 +109,30 @@ export default function ProductDetail() {
   const classes = useStyle();
   const dispatch = useDispatch();
   const navigate=useNavigate()
-  const { data } = useSelector((state) => ({
-    loading: state.products.isLoading,
-    err: state.products.isError,
-    data: state.products.productData,
+  const { data,loading } = useSelector((state) => ({
+    loading: state.productDetails.isLoading,
+    err: state.productDetails.isError,
+    data: state.productDetails.product,
   }));
+  console.log(data)
   const { id, price, detailUrl, title } =data;
   const [quantity,setQuantity]=useState(1)
-  const addItemToCart = () => {
-    dispatch(addToCart(id, quantity));
-      navigate.push('/cart');
-  };
+  // const addItemToCart = (d) => {
+  //    dispatch(addToCart(d));
+  //     // navigate('/cart');
+  // };
+  useEffect(() => {
+    // if(data && params.id !== data.id)   
+        dispatch(getProductDetails(params.id));
+}, []);
+
   const adURL =
     "https://rukminim1.flixcart.com/lockin/774/185/images/CCO__PP_2019-07-14.png?q=50";
   const fassured =
     "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png";
 
   const date = new Date(new Date().getTime() + 5 * 24 * 60 * 60 * 1000);
+  const d=data
   return (
     <>
       <Box className={classes.productDetailContainer}>
@@ -138,14 +146,16 @@ export default function ProductDetail() {
                     <img src={d.url} alt="" className={classes.productImage} />
                     <Button
                       variant="contained"
-                      onClick={addItemToCart()}
+                      onClick={()=>{
+                        dispatch(getCartData());
+
+                      }}
                       className={ classes.addToCart}
                     >
                       <Cart /> ADD TO CART
                     </Button>
                     <Button
                       variant="contained"
-                      onClick={addItemToCart()}
                       className={classes.buyNow}
                     >
                       <Flash />
@@ -256,10 +266,10 @@ export default function ProductDetail() {
               </Grid>
 
             </>
-          ) : (
+           ) : (
             ""
           )
-        )}
+        )} 
       </Box>
     </>
   );

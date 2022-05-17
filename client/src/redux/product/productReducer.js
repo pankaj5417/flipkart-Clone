@@ -1,4 +1,4 @@
-import { GET_PRODUCT_ERROR, GET_PRODUCT_LOADING, GET_PRODUCT_SUCCESS } from "./productActionType";
+import { GET_PRODUCTDETAIL_ERROR, GET_PRODUCTDETAIL_LOADING, GET_PRODUCTDETAIL_RESET, GET_PRODUCTDETAIL_SUCCESS, GET_PRODUCT_ERROR, GET_PRODUCT_LOADING, GET_PRODUCT_SUCCESS } from "./productActionType";
 
 const initialState={
     isLoading:false,
@@ -36,4 +36,26 @@ export const productReducer=(state=initialState,{type,payload})=>{
                 }
     
 }
+}
+
+export const getProductDetailsReducer = (state = { product: []}, {type,payload}) => {
+    
+    console.log('Hi',type)
+    switch(type){
+        case GET_PRODUCTDETAIL_LOADING:
+            return { loading: true }
+        case GET_PRODUCTDETAIL_SUCCESS:
+            return { loading: false, product: payload }
+        case GET_PRODUCTDETAIL_ERROR:
+            return {
+                loading: false,
+                error: payload
+            }
+        case GET_PRODUCTDETAIL_RESET: 
+            return {
+                product: {}
+            }
+        default:
+            return state
+    }
 }
