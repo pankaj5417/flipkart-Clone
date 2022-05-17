@@ -19,7 +19,7 @@ import {
   FlashOn as Flash,
   LocalOffer as Badge,
 } from "@mui/icons-material";
-import { addToCart, getCartData } from "../../redux/cart/cartActionCreator";
+import { addToCart, addToCartSuccess, getCartData } from "../../redux/cart/cartActionCreator";
 import { getProductDetails } from "../../redux/product/productActionCreator";
 
 const useStyle = makeStyles({
@@ -121,6 +121,30 @@ export default function ProductDetail() {
   //    dispatch(addToCart(d));
   //     // navigate('/cart');
   // };
+
+  const addItemToCart=(data)=>{
+   
+    fetch("https://my-json-server.typicode.com/pankaj5417/json-server/cartData", {
+        method:"POST",
+        headers:{
+            "Content-Type":"application/json",
+        },
+        body:JSON.stringify(data)
+    }).then((d)=>d.json()).then((res)=>{
+        //success
+        dispatch(addToCartSuccess(d));
+        dispatch(getCartData());
+
+    }).catch(err=>{
+        //error
+        console.log(err)
+       
+        
+
+    })
+
+
+ }
   useEffect(() => {
     // if(data && params.id !== data.id)   
         dispatch(getProductDetails(params.id));
@@ -147,7 +171,7 @@ export default function ProductDetail() {
                     <Button
                       variant="contained"
                       onClick={()=>{
-                        dispatch(getCartData());
+                        dispatch(addItemToCart(d));
 
                       }}
                       className={ classes.addToCart}

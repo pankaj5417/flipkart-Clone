@@ -14,8 +14,7 @@ export const getCartDataSuccess = (data) => {
 };
 export const addToCart = (data) => async (dispatch) => {
   try {
-     fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/cartData`,
-      {
+     fetch(`https://my-json-server.typicode.com/pankaj5417/json-server/cartData`,{
         method:"POST",
         body:JSON.stringify(data),
         headers: {
@@ -49,5 +48,5 @@ export const removeFromCart = (id) => (dispatch, getState) => {
     payload: id,
   });
 
-  localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems));
+ // localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems));
 };

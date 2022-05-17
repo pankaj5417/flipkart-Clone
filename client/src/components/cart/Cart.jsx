@@ -12,7 +12,7 @@ import { useParams } from "react-router-dom";
 
 const useStyle = makeStyles(theme => ({
   component: {
-      // marginTop: 55,
+       marginTop: 55,
       padding: '30px 135px',
       display: 'flex',
       [theme.breakpoints.down('sm')]: {
@@ -47,7 +47,7 @@ const useStyle = makeStyles(theme => ({
   }
 }));
 
-  export default function Cart({ match, navigate }) {
+  export default function Cart() {
   const dispatch=useDispatch()
   const params=useParams()
   const {data}=useSelector(state=>({
@@ -60,8 +60,8 @@ const useStyle = makeStyles(theme => ({
 
     const classes = useStyle();
 
-    const cartDetails = useSelector(state => state.cart);
-    const { cartItems } = cartDetails;
+    // const cartDetails = useSelector(state => state.cart);
+    // const { cartItems } = cartDetails;
 
    
     
@@ -82,13 +82,13 @@ const useStyle = makeStyles(theme => ({
 console.log("cartData",data)
   return (
     <>
-     { cartItems.length ? 
+     { data.length ? 
             <Grid container className={classes.component}>
                 <Grid item lg={9} md={9} sm={12} xs={12} className={classes.leftComponent}>
                     <Box className={classes.header}>
-                        <Typography style={{fontWeight: 600, fontSize: 18}}>My Cart ({cartItems?.length})</Typography>
+                        <Typography style={{fontWeight: 600, fontSize: 18}}>My Cart ({data?.length})</Typography>
                     </Box>
-                        {   cartItems.map(item => (
+                        {   data.map(item => (
                                 <CartItem item={item} removeItemFromCart={removeItemFromCart}/>
                             ))
                         }
@@ -97,7 +97,7 @@ console.log("cartData",data)
                     </Box>
                 </Grid>
                 <Grid item lg={3} md={3} sm={12} xs={12}>
-                    <TotalView cartItems={cartItems} />
+                    <TotalView cartItems={data} />
                 </Grid>
             </Grid> : <EmptyCart />
         }
