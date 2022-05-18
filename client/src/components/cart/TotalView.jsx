@@ -35,6 +35,7 @@ const useStyle = makeStyles({
 
 
 const TotalView = ({ cartItems }) => {
+    console.log("cartItems2",cartItems)
     const classes = useStyle();
     const [price, setPrice] = useState(0);
     const [discount, setDiscount] = useState(0)
@@ -46,10 +47,13 @@ const TotalView = ({ cartItems }) => {
     const totalAmount = () => {
         let price = 0, discount = 0;
         console.log(cartItems);
-        cartItems.map(item => {
-            price += item.price.mrp
-            discount += (item.price.mrp - item.price.cost) 
+        var result=cartItems.map(item => {
+            price += (+item.price.mrp)
+            discount += (+item.price.mrp - +item.price.cost) 
+            console.log(item.price.mrp)
+            return [price,discount]
         })
+        console.log(price,discount)
         setPrice(price);
         setDiscount(discount);
     }

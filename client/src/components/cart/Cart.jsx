@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { addToCart, removeFromCart } from "../../redux/cart/cartActionCreator"
+import { addToCart, getCartData, removeFromCart } from "../../redux/cart/cartActionCreator"
 import { Box, Typography, Button, Grid } from '@mui/material';
 import {  makeStyles } from "@mui/styles";
 
@@ -65,11 +65,11 @@ const useStyle = makeStyles(theme => ({
 
    
     
-    // useEffect(() => {
+     useEffect(() => {
     //     if(cartItems && params.id !== cartItems.id)   
-    //         dispatch(addToCart());
+    dispatch(getCartData());
     //     console.log(cartItems);
-    // }, [dispatch, cartItems]);
+     }, []);
 
     const removeItemFromCart = (id) => {
         dispatch(removeFromCart(id));

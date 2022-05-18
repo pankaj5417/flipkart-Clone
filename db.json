@@ -49,7 +49,7 @@
       "price": {
         "mrp": 1195,
         "cost": 625,
-        "discount": " 47%"
+        "discount": "47%"
       },
       "description": "This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.",
       "discount": "Extra 10% Off",
@@ -66,7 +66,7 @@
       "price": {
         "mrp": 1499,
         "cost": 899,
-        "discount": " 40%"
+        "discount": "40%"
       },
       "description": "This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better",
       "discount": " From 99+5% Off",
@@ -187,7 +187,7 @@
       "price": {
         "mrp": 1499,
         "cost": 899,
-        "discount": " 40%"
+        "discount": "40%"
       },
       "description": "This non-stick sandwich toaster .easy to use and very handy. Directly hold over flame to make tasty toasts and toasted sandwiches. Specially designed by keeping your needs in mind, the sandwich maker makes whatever youre doing simpler, smarter and better",
       "discount": " From 99+5% Off",
@@ -219,13 +219,30 @@
         "longTitle": " Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)"
       },
       "price": {
-        " mrp": 1195,
+        "mrp": 1195,
         "cost": 625,
-        "discount": " 47%"
+        "discount": "47%"
       },
       "description": "This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.",
       "discount": "Extra 10% Off",
       "tagline": "Deal of the day "
+    },
+    {
+      "id": "product3",
+      "url": "https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
+      "title": {
+        "shortTitle": "Fitness Gear",
+        "longTitle": "AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)"
+      },
+      "price": {
+        "mrp": 499,
+        "cost": 166,
+        "discount": "66%"
+      },
+      "description": "This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.",
+      "discount": "Upto 70% Off",
+      "tagline": "Deal of the Day "
     }
   ]
 }
