@@ -114,7 +114,7 @@ export default function ProductDetail() {
     err: state.productDetails.isError,
     data: state.productDetails.product,
   }));
-  console.log(data)
+  console.log("detailsData",data)
   const { id, price, detailUrl, title } =data;
   const [quantity,setQuantity]=useState(1)
   // const addItemToCart = (d) => {
@@ -122,17 +122,18 @@ export default function ProductDetail() {
   //     // navigate('/cart');
   // };
 
-  const addItemToCart=(data)=>{
+  const addItemToCart=(datas)=>{
    
-    fetch("https://my-json-server.typicode.com/pankaj5417/json-server/cartData", {
-        method:"POST",
+    fetch("http://localhost:3001/cartData",{
+      method:"POST",
+      body:JSON.stringify(datas),
         headers:{
             "Content-Type":"application/json",
         },
-        body:JSON.stringify(data)
     }).then((d)=>d.json()).then((res)=>{
+      console.log("postData",res)
         //success
-        dispatch(addToCartSuccess(d));
+        dispatch(addToCartSuccess(res));
         dispatch(getCartData());
 
     }).catch(err=>{
@@ -171,7 +172,7 @@ export default function ProductDetail() {
                     <Button
                       variant="contained"
                       onClick={()=>{
-                        dispatch(addItemToCart(d));
+                        addItemToCart(d);
 
                       }}
                       className={ classes.addToCart}

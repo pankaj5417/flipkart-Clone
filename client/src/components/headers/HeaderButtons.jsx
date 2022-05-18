@@ -6,6 +6,7 @@ import { ShoppingCart } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import Login from "../Login/Login";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 const useStyle = makeStyles({
   login: {
     background: "#FFFFFF",
@@ -36,6 +37,10 @@ const useStyle = makeStyles({
 function HeaderButtons() {
   const classes = useStyle();
   const [open,setOpen]=useState(false)
+  const {data}=useSelector(state=>({
+   
+    data:state.cart.cartData
+  }))
 
   const openDialogBox=()=>{
     setOpen(true)
@@ -51,7 +56,7 @@ function HeaderButtons() {
       <Typography style={{ marginTop: 5 }}>More</Typography>
         </Link>
       <Link to ="/cart" className={classes.container}>
-        <Badge color="secondary" badgeContent={2}>
+        <Badge color="secondary" badgeContent={data?.length}>
           <ShoppingCart />
         </Badge>
         <Typography style={{ marginLeft: 10 }}>Cart</Typography>
