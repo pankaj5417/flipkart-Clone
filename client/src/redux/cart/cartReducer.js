@@ -27,3 +27,30 @@ export const cartReducer = (state = initialState, { type, payload }) => {
       return state;
   }
 };
+
+
+// case ADD_TO_CART:
+//   const { payload } = aciton;
+//   const item = state.cartItems.find(
+//     product => product.id === payload.id,
+//   );
+
+//   if (item) {
+//     return {
+//       ...state,
+//       cartItems: state.cartItems.map(item => item.id === payload.id
+//         ? {
+//           ...item,
+//           qty: item.qty + 1,
+//         }
+//         : item
+//       ),
+//       totalPrice: state.totalPrice + payload.price,
+//     };
+//   }
+
+//   return {
+//     ...state,
+//     cartItems: [...state.cartItems, payload],
+//     totalPrice: state.totalPrice + payload.price,
+//   };

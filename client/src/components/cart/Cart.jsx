@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { addToCart, getCartData, removeFromCart } from "../../redux/cart/cartActionCreator"
+import { addToCart, addToCartSuccess, getCartData, removeFromCart } from "../../redux/cart/cartActionCreator"
 import { Box, Typography, Button, Grid } from '@mui/material';
 import {  makeStyles } from "@mui/styles";
 
@@ -9,6 +9,7 @@ import CartItem from "./CartItem";
 import TotalView from "./TotalView";
 import EmptyCart from "./EmptyCart";
 import { useParams } from "react-router-dom";
+import { JSON_API } from "../../url";
 
 const useStyle = makeStyles(theme => ({
   component: {
@@ -60,8 +61,7 @@ const useStyle = makeStyles(theme => ({
 
     const classes = useStyle();
 
-    // const cartDetails = useSelector(state => state.cart);
-    // const { cartItems } = cartDetails;
+    
 
    
     
@@ -69,11 +69,34 @@ const useStyle = makeStyles(theme => ({
     //     if(cartItems && params.id !== cartItems.id)   
     dispatch(getCartData());
     //     console.log(cartItems);
-     }, []);
+}, []);
 
-    const removeItemFromCart = (id) => {
-        dispatch(removeFromCart(id));
+const removeItemFromCart = (id) => {
+    dispatch(removeFromCart(id));
+    postRemovedCartItems(id)
+      
     }
+    console.log("kartData",data)
+    
+    
+    const postRemovedCartItems=(id)=>{
+        fetch(`${JSON_API}/cartData/${id}`,{
+            method:"DELETE",
+            // headers:{
+            //     "Content-Type":"application/json"
+            // },
+
+           
+        })
+        .then(res=>res.json()).then(d=>{
+            
+            console.log("cartDatas3",d);
+            // dispatch(addToCartSuccess(d));
+            // dispatch(getCartData());
+        })
+    }
+    
+   
     const buyNow=()=>{
 
     }

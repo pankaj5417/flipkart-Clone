@@ -1,3 +1,4 @@
+import { JSON_API } from "../../url";
 import {
   GET_PRODUCTDETAIL_ERROR,
   GET_PRODUCTDETAIL_LOADING,
@@ -48,7 +49,7 @@ export const getProductData = (val, type, num) => async (dispatch) => {
   try {
     dispatch(getProductLoading);
     const res = await fetch(
-      `https://my-json-server.typicode.com/pankaj5417/json-server/products?_page=${val}&_limit=5&_sort=${type}&_order=${val}`
+      `${JSON_API}/products?_page=${val}&_limit=5&_sort=${type}&_order=${val}`
     );
     const data = await res.json();
     console.log("products", data);
@@ -63,7 +64,7 @@ export const getFilteredData = (val, type, num) => async (dispatch) => {
   try {
     dispatch(getProductLoading);
     const res = await fetch(
-      `https://my-json-server.typicode.com/pankaj5417/json-server/products?id=${val}`
+      `${JSON_API}/products?id=${val}`
     );
     const data = await res.json();
     console.log("filterdDatas", data);
@@ -77,7 +78,7 @@ export const getProductDetails = (id, type, num) => async (dispatch) => {
   try {
     dispatch(getProductDetailLoading);
     const res = await fetch(
-      `https://my-json-server.typicode.com/pankaj5417/json-server/products?id=${id}`
+      `${JSON_API}/products?id=${id}`
     );
     const data = await res.json();
     console.log("productDetails", data);

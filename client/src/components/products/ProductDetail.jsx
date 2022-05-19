@@ -21,6 +21,7 @@ import {
 } from "@mui/icons-material";
 import { addToCart, addToCartSuccess, getCartData } from "../../redux/cart/cartActionCreator";
 import { getProductDetails } from "../../redux/product/productActionCreator";
+import { JSON_API } from "../../url";
 
 const useStyle = makeStyles({
   productDetailContainer: {
@@ -124,7 +125,7 @@ export default function ProductDetail() {
 
   const addItemToCart=(datas)=>{
    
-    fetch("http://localhost:3001/cartData",{
+    fetch(`${JSON_API}/cartData`,{
       method:"POST",
       body:JSON.stringify(datas),
         headers:{

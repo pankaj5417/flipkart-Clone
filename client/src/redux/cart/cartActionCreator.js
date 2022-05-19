@@ -1,3 +1,4 @@
+import { JSON_API } from "../../url";
 import { ADD_TO_CART, GET_CART_DATA, REMOVE_FROM_CART } from "./cartActionType";
 
 export const addToCartSuccess = (data) => {
@@ -15,7 +16,7 @@ export const getCartDataSuccess = (data) => {
 export const addToCart = (data) => async (dispatch) => {
   try {
     fetch(
-      `https://my-json-server.typicode.com/pankaj5417/json-server/cartData`,
+      `${JSON_API}/cartData`,
       {
         method: "POST",
         body: JSON.stringify(data),
@@ -34,7 +35,7 @@ export const addToCart = (data) => async (dispatch) => {
   }
 };
 export const getCartData = (data) => async (dispatch) => {
-  const res = await fetch(`http://localhost:3001/cartData`);
+  const res = await fetch(`${JSON_API}/cartData`);
   const cartData = await res.json();
   console.log("cartDatas", cartData);
   dispatch(getCartDataSuccess(cartData));
@@ -46,6 +47,6 @@ export const removeFromCart = (id) => (dispatch, getState) => {
     type: REMOVE_FROM_CART,
     payload: id,
   });
-
+   
   // localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems));
 };
