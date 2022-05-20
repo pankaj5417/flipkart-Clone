@@ -36,6 +36,10 @@ const useStyle = makeStyles({
 
 function HeaderButtons() {
   const classes = useStyle();
+  const {userData}=useSelector(state=>({userData:state.userDetail.userDetails}))
+
+  //const [isLogin,setIsLogin]=useState(false)
+
   const [open,setOpen]=useState(false)
   const {data}=useSelector(state=>({
    

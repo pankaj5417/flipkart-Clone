@@ -193,5 +193,16 @@
       "discount": "Grab Now",
       "tagline": "Best Seller"
     }
+  ],
+  "userDetails": [
+    {
+      "firstname": "PANKAJ",
+      "lastname": "KUMAR",
+      "username": "Pankaj54178",
+      "email": "madhuban541@gmail.com",
+      "password": "pk123",
+      "phone": "4545646546",
+      "id": 1
+    }
   ]
 }
