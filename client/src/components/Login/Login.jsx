@@ -103,8 +103,9 @@ export default function Login({ open, setOpen,setIsLogin }) {
   }
 
   const showUser=()=>{
-    setIsLogin(true)
+   // setIsLogin(true)
     alert("Login successful")
+    navigate("/products")
   }
   const handleLoginInput = (e) => {
     const {name,value}=e.target

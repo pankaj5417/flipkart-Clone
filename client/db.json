@@ -175,25 +175,7 @@
       "tagline": "Grab Now!"
     }
   ],
-  "cartData": [
-    {
-      "id": "product4",
-      "url": "https://rukminim1.flixcart.com/image/300/300/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kll7bm80/smartwatch/c/1/n/43-mo-sw-sense-500-android-ios-molife-original-imagyzyycnpujyjh.jpeg?q=70",
-      "title": {
-        "shortTitle": "Smart Watches",
-        "longTitle": "Molife Sense 500 Smartwatch  (Black Strap, Freesize)"
-      },
-      "price": {
-        "mrp": 6999,
-        "cost": 4049,
-        "discount": "42%"
-      },
-      "description": "The Molife Sense 500, a brilliant smartwatch with a beautiful large display. Say hello to the infinity 1.7-inch display with 2.5D curved edges. Thanks to seamless Bluetooth 5.0 connectivity, you wont have to keep waiting. Bring a change to your outfit every day with changeable straps. A splash of color every day keeps the boredom away.",
-      "discount": "Grab Now",
-      "tagline": "Best Seller"
-    }
-  ],
+  "cartData": [],
   "userDetails": [
     {
       "firstname": "PANKAJ",

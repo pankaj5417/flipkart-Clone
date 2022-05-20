@@ -136,6 +136,7 @@ export default function ProductDetail() {
         //success
         dispatch(addToCartSuccess(res));
         dispatch(getCartData());
+        navigate("/cart")
 
     }).catch(err=>{
         //error
