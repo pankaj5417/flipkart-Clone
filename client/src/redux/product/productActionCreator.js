@@ -49,7 +49,7 @@ export const getProductData = (val, type, num) => async (dispatch) => {
   try {
     dispatch(getProductLoading);
     const res = await fetch(
-      `${JSON_API}/products?_page=${val}&_limit=5&_sort=${type}&_order=${val}`
+      `${JSON_API}/products?_page=${val}&_limit=8&_sort=${type}&_order=${val}`
     );
     const data = await res.json();
     console.log("products", data);

@@ -1,3 +1,4 @@
+import { JSON_API } from "../../url";
 import {
   BASIC_DETAILS_ERROR,
   BASIC_DETAILS_LOADING,
@@ -26,7 +27,7 @@ export const basicDetailsIsError = (e) => {
 
 export const postBasicDetails = (userData) => (dispatch) => {
   try {
-    fetch(`http://localhost:3001/userDetails`, {
+    fetch(`${JSON_API}/userDetails`, {
       method: "POST",
       body: JSON.stringify(userData),
       headers: {
@@ -47,7 +48,7 @@ export const getBasicDetails = (userData) => (dispatch) => {
   try {
     dispatch(basicDetailsIsLoading());
 
-    fetch(`http://localhost:3001/userDetails`)
+    fetch(`${JSON_API}/userDetails`)
       .then((e) => e.json())
       .then((res) => {
         dispatch(basicDetailsIsSuccess(res));

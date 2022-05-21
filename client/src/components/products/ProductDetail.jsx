@@ -12,146 +12,136 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@mui/styles";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { useParams ,useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import clsx from "clsx";
 import {
   ShoppingCart as Cart,
   FlashOn as Flash,
   LocalOffer as Badge,
 } from "@mui/icons-material";
-import { addToCart, addToCartSuccess, getCartData } from "../../redux/cart/cartActionCreator";
+import {
+  addToCart,
+  addToCartSuccess,
+  getCartData,
+} from "../../redux/cart/cartActionCreator";
 import { getProductDetails } from "../../redux/product/productActionCreator";
 import { JSON_API } from "../../url";
 
 const useStyle = makeStyles({
   productDetailContainer: {
     marginTop: 55,
-    background: '#F2F2F2'
+    background: "#F2F2F2",
   },
   component: {
     marginTop: 55,
-    background: '#F2F2F2'
-},
-container: {
-    background: '#FFFFFF',
+    background: "#F2F2F2",
+  },
+  container: {
+    background: "#FFFFFF",
     // margin: '0 80px',
-    display: 'flex',
+    display: "flex",
     // [theme.breakpoints.down('md')]: {
     //     margin: 0
     // }
-},
-rightContainer: {
-    marginTop: 50,
-    padding:"10px",
-    '& > *': {
-        marginTop: 10
-    }
-},
-price: {
-    fontSize: 28
-},
-smallText: {
+  },
+  rightContainer: {
+    padding: "40px 0 0 0",
+  },
+  price: {
+    fontSize: 28,
+  },
+  smallText: {
     fontSize: 14,
-},
-greyTextColor: {
-    color: '#878787'
-},
+  },
+  greyTextColor: {
+    color: "#878787",
+  },
   leftContainer: {
     minWidth: "40%",
-    width:"60%",
+    width: "80%",
 
-    padding: "40px 0 0 80px",
-    
+    padding: "40px 5px 0 50px",
   },
   productImage: {
-    padding: "15px 20px",
+    padding: "15px",
     border: "1px solid #f0f0f0",
-    width: "95%",
+    width: "97%",
   },
-  
+  btnContainer: {
+    width: "100%",
+    padding: "15px",
+    display: "flex",
+    justifyContent: "space-between",
+  },
   addToCart: {
     background: "#ff9f00 !important",
     color: "#FFF",
-    marginRight:"10px",
-    width: "46%",
+
+    width: "49%",
     borderRadius: 2,
-    height: 50,
+    height: 70,
   },
   buyNow: {
     background: "#fb641b !important",
     color: "#FFF",
-    width: "46%",
+    width: "49%",
     borderRadius: 2,
-    height: 50,
+    height: 70,
   },
-  smallText: {
-    fontSize: 14,
-   // verticalAlign: 'baseline',
-    '& > *' :{
-        fontSize: 14,
-        marginTop: 10
-    }
-},
-greyTextColor: {
-    color: '#878787'
-},
-badge: {
+
+  badge: {
     marginRight: 10,
-    color: '#00CC00',
-    fontSize: 15
-},
-wrapper: {
-    display: 'flex'
-}
+    color: "#00CC00",
+    fontSize: 15,
+  },
+  wrapper: {
+    display: "flex",
+  },
 });
 
 export default function ProductDetail() {
   const params = useParams();
   const classes = useStyle();
   const dispatch = useDispatch();
-  const navigate=useNavigate()
-  const { data,loading } = useSelector((state) => ({
+  const navigate = useNavigate();
+  const { data, loading } = useSelector((state) => ({
     loading: state.productDetails.isLoading,
     err: state.productDetails.isError,
     data: state.productDetails.product,
   }));
-  console.log("detailsData",data)
-  const { id, price, detailUrl, title } =data;
-  const [quantity,setQuantity]=useState(1)
+  console.log("detailsData", data);
+  //const { id, price, detailUrl, title } = data;
+  //const [quantity, setQuantity] = useState(1);
   // const addItemToCart = (d) => {
   //    dispatch(addToCart(d));
   //     // navigate('/cart');
   // };
 
-  const addItemToCart=(datas)=>{
-   
-    fetch(`${JSON_API}/cartData`,{
-      method:"POST",
-      body:JSON.stringify(datas),
-        headers:{
-            "Content-Type":"application/json",
-        },
-    }).then((d)=>d.json()).then((res)=>{
-      console.log("postData",res)
+  const addItemToCart = (datas) => {
+    fetch(`${JSON_API}/cartData`, {
+      method: "POST",
+      body: JSON.stringify(datas),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((d) => d.json())
+      .then((res) => {
+        console.log("postData", res);
         //success
         dispatch(addToCartSuccess(res));
         dispatch(getCartData());
-        navigate("/cart")
-
-    }).catch(err=>{
+        navigate("/cart");
+      })
+      .catch((err) => {
         //error
-        console.log(err)
-       
-        
-
-    })
-
-
- }
+        console.log(err);
+      });
+  };
   useEffect(() => {
-    // if(data && params.id !== data.id)   
-        dispatch(getProductDetails(params.id));
-}, []);
+    // if(data && params.id !== data.id)
+    dispatch(getProductDetails(params.id));
+  }, []);
 
   const adURL =
     "https://rukminim1.flixcart.com/lockin/774/185/images/CCO__PP_2019-07-14.png?q=50";
@@ -159,7 +149,7 @@ export default function ProductDetail() {
     "https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png";
 
   const date = new Date(new Date().getTime() + 5 * 24 * 60 * 60 * 1000);
-  const d=data
+  const d = data;
   return (
     <>
       <Box className={classes.productDetailContainer}>
@@ -167,35 +157,32 @@ export default function ProductDetail() {
           d.id === params.id ? (
             <>
               <Grid container className={classes.container}>
-
-                <Grid item lg={4} md={4} sm={8} xs={12} >
+                <Grid item lg={5} md={5} sm={8} xs={12}>
                   <Box className={classes.leftContainer}>
                     <img src={d.url} alt="" className={classes.productImage} />
-                    <Button
-                      variant="contained"
-                      onClick={()=>{
-                        addItemToCart(d);
-
-                      }}
-                      className={ classes.addToCart}
-                    >
-                      <Cart /> ADD TO CART
-                    </Button>
-                    <Button
-                      variant="contained"
-                      className={classes.buyNow}
-                    >
-                      <Flash />
-                      BUY NOW
-                    </Button>
+                    <Box className={classes.btnContainer}>
+                      <Button
+                        variant="contained"
+                        onClick={() => {
+                          addItemToCart(d);
+                        }}
+                        className={classes.addToCart}
+                      >
+                        <Cart /> ADD TO CART
+                      </Button>
+                      <Button variant="contained" className={classes.buyNow}>
+                        <Flash />
+                        BUY NOW
+                      </Button>
+                    </Box>
                   </Box>
                 </Grid>
 
                 <Grid
                   item
-                  lg={8}
-                  md={8}
-                  sm={8}
+                  lg={6}
+                  md={6}
+                  sm={6}
                   xs={12}
                   className={classes.rightContainer}
                 >
@@ -208,7 +195,7 @@ export default function ProductDetail() {
                     <span>
                       <img
                         src={fassured}
-                        style={{ width: 77, marginLeft: 20 }} 
+                        style={{ width: 77, marginLeft: 20 }}
                         alt=""
                       />
                     </span>
@@ -248,9 +235,12 @@ export default function ProductDetail() {
                       purchase
                     </Typography>
                   </Box>
-                  <Table >
+                  <Table>
                     <TableBody>
-                      <TableRow className={classes.smallText} style={{border:"none"}}>
+                      <TableRow
+                        className={classes.smallText}
+                        style={{ border: "none" }}
+                      >
                         <TableCell className={classes.greyTextColor}>
                           Delivery
                         </TableCell>
@@ -258,13 +248,25 @@ export default function ProductDetail() {
                           Delivery by {date.toDateString()} | ₹40
                         </TableCell>
                       </TableRow>
-                      <TableRow className={classes.smallText} style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
+                      <TableRow
+                        className={classes.smallText}
+                        style={{
+                          border: "1px solid lightgrey",
+                          borderRadius: "1px",
+                        }}
+                      >
                         <TableCell className={classes.greyTextColor}>
                           Warranty
                         </TableCell>
                         <TableCell>No Warranty</TableCell>
                       </TableRow>
-                      <TableRow className={classes.smallText} style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
+                      <TableRow
+                        className={classes.smallText}
+                        style={{
+                          border: "1px solid lightgrey",
+                          borderRadius: "1px",
+                        }}
+                      >
                         <TableCell className={classes.greyTextColor}>
                           Seller
                         </TableCell>
@@ -276,12 +278,23 @@ export default function ProductDetail() {
                           </Typography>
                         </TableCell>
                       </TableRow>
-                      <TableRow style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
+                      <TableRow
+                        style={{
+                          border: "1px solid lightgrey",
+                          borderRadius: "1px",
+                        }}
+                      >
                         <TableCell colSpan={2}>
-                          <img src={adURL} style={{ width: 390 }} alt=""/>
+                          <img src={adURL} style={{ width: 390 }} alt="" />
                         </TableCell>
                       </TableRow>
-                      <TableRow className={classes.smallText} style={{border:"1px solid lightgrey",borderRadius:"1px"}}>
+                      <TableRow
+                        className={classes.smallText}
+                        style={{
+                          border: "1px solid lightgrey",
+                          borderRadius: "1px",
+                        }}
+                      >
                         <TableCell className={classes.greyTextColor}>
                           Description
                         </TableCell>
@@ -291,12 +304,11 @@ export default function ProductDetail() {
                   </Table>
                 </Grid>
               </Grid>
-
             </>
-           ) : (
+          ) : (
             ""
           )
-        )} 
+        )}
       </Box>
     </>
   );

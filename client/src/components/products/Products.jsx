@@ -51,8 +51,9 @@ const useStyle = makeStyles({
     boxSizing:"border-box"
   },
   image: {
-    width: "200px",
-    height: 180,
+    width: "250px",
+    height: 320,
+    padding:"3px"
   },
   wrapper: {
     padding: "35px 15px",
@@ -291,6 +292,9 @@ console.log("productData",data)
               display: "flex",
               width: "50%",
               justifyContent: "space-between",
+              fontWeight:"600",
+              color:"grey",
+              cursor:"pointer"
             }}
           >
             <span>Sort by</span>
@@ -310,19 +314,19 @@ console.log("productData",data)
               <>
                <Link to={`/products/${item.id}`} style={{textDecoration:"none"}}>
 
-                <Box textAlign="center" className={classes.wrapper}>
+                <Box textAlign="left" className={classes.wrapper}>
                   <img src={item.url} alt="" className={classes.image} />
                   <Typography
                     className={classes.text}
                     style={{ fontWeight: 600, color: "#212121" }}
                   >
                     {item.title.shortTitle}
-                  </Typography>
-                  <span>
+                  </Typography >
+                  <span style={{color:"black"}}>
                     ₹<strong>{item.price.cost}</strong>
                   </span>
                   &nbsp;&nbsp;
-                  <span style={{ textDecoration: "line-through" }}>
+                  <span style={{ textDecoration: "line-through",color:"black" }}>
                     ₹{item.price.mrp}
                   </span>
                   &nbsp;&nbsp;
