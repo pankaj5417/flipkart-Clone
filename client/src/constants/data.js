@@ -11,6 +11,7 @@ export const navData = [
 ];
 
 export const bannerData = [
+    'https://rukminim1.flixcart.com/flap/3376/560/image/a4b1e91c90b3c2d3.jpeg?q=50',
     'https://rukminim1.flixcart.com/flap/3376/560/image/d117a62eb5fbb8e1.jpg?q=50',
     'https://rukminim1.flixcart.com/flap/3376/560/image/57267a180af306fe.jpg?q=50',
     //'https://rukminim1.flixcart.com/flap/3376/560/image/ae9966569097a8b7.jpg?q=50',
@@ -22,20 +23,20 @@ export const bannerData = [
 export const products = [
     { 
         id: 'product1',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        url: 'https://rukminim1.flixcart.com/image/612/612/kdyus280/stuffed-toy/v/w/w/soft-and-cute-pink-color-teddy-bear-boys-and-girls-150-eskimo-original-imafur8asqx6af9d.jpeg?q=70', 
+        detailUrl: 'https://rukminim1.flixcart.com/image/832/832/kdyus280/stuffed-toy/v/w/w/soft-and-cute-pink-color-teddy-bear-boys-and-girls-150-eskimo-original-imafur8asqx6af9d.jpeg?q=70',
         title: {
-            shortTitle: 'Home & Kitchen',
-            longTitle: 'Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)'
+            shortTitle: 'soft Toys',
+            longTitle: 'LittleHug Teddy Bear Stuff - 92 cm  (Pink)'
         }, 
         price: {
-            mrp: 1195,
-            cost: 625,
-            discount: '47%'
+            mrp: 1999,
+            cost: 99,
+            discount: '85%'
         },
-        description: 'This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.',
-        discount: 'Extra 10% Off', 
-        tagline: 'Deal of the day' 
+        description: 'Soft and Cuddly filling, Huggable and loveable for someone special, Teach your loved one the act of hugging with the help of these teddies. Super soft plush materials for huggable loveable joy and keeps kids playful for long hours. Gift this soft, smooth and cuddly teddy as a great gift to your loved one. Great for all kids (and adults) who love to hold, hug, cuddle and treasure. Made out of non-toxic polyester and fur fabrics of good quality. ',
+        discount: 'Extra 40% Off', 
+        tagline: 'Deal of the day'   
     },
     { 
         id: 'product2',
@@ -56,20 +57,20 @@ export const products = [
     },
     { 
         id: 'product3',
-        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
-        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        url: 'https://rukminim1.flixcart.com/image/400/400/jzzvs7k0/shirt/h/a/h/l-c301-dustypink-dennis-lingo-original-imafjvx7b9jguhdv.jpeg?q=70', 
+        detailUrl: 'https://rukminim1.flixcart.com/image/400/400/jzzvs7k0/shirt/h/a/h/l-c301-dustypink-dennis-lingo-original-imafjvx7b9jguhdv.jpeg?q=70', 
         title: {
-            shortTitle: 'Fitness Gear',
-            longTitle: 'AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)'
+            shortTitle: 'KILLER,UCB,USPA...',
+            longTitle: 'Men Slim Fit Printed Spread Collar Casual Shirt'
         }, 
         price: {
-            mrp: 499,
-            cost: 166,
-            discount: '66%'
+            mrp: 799,
+            cost: 499,
+            discount: '40%'
         },
         description: 'This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.',
-        discount: 'Upto 70% Off', 
-        tagline: 'Deal of the Day' 
+        discount: 'Upto 60% Off', 
+        tagline: 'Shirts,Trousers,Suits,Blazers' 
     },
     { 
         id: 'product4',
@@ -138,6 +139,41 @@ export const products = [
         description: 'Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.',
         discount: 'Minimum 50% Off', 
         tagline: 'Grab Now!' 
+    },
+    { 
+        id: 'product8',
+        url: 'https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70', 
+        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70',
+        title: {
+            shortTitle: 'Home & Kitchen',
+            longTitle: 'Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)'
+        }, 
+        price: {
+            mrp: 1195,
+            cost: 625,
+            discount: '47%'
+        },
+        description: 'This electric kettle from Pigeon will soon become a travelers best friend, a hostelite saviour and an answer to all the midnight cravings. With this handy appliance, you can boil water and use it to make instant noodles, packet soup, coffee and green tea.',
+        discount: 'Extra 10% Off', 
+        tagline: 'Deal of the day' 
+    },
+    { 
+        
+        id: 'product9',
+        url: 'https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        detailUrl: 'https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70', 
+        title: {
+            shortTitle: 'Fitness Gear',
+            longTitle: 'AJRO DEAL New Adjustable Single Resistance Tube (Multicolor) Resistance Tube  (Multicolor)'
+        }, 
+        price: {
+            mrp: 499,
+            cost: 166,
+            discount: '66%'
+        },
+        description: 'This unique product can tone your back muscles, reduce belly fat, improve blood circulation and also improves your body posture. It increases the stamina, energy and vitality of the body. The elastic resistance of the rubber training rope can be used to train and exercise in whichever way you want, according to your physical needs.',
+        discount: 'Upto 70% Off', 
+        tagline: 'Deal of the Day' 
     }
 ];
 

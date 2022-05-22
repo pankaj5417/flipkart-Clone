@@ -40,83 +40,99 @@
   "products": [
     {
       "id": "product1",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"laptop",
+      "brand": "ALIENWARE",
+      "gender": "",
+      "url": "https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn39jhwfdwp.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn3zpeu2att.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn3zpeu2att.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/kcauaa80/computer/8/k/e/alienware-original-imaftgn37g4vzqmy.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "ALIENWARE",
+        "longTitle": "ALIENWARE Core i7 10th Gen - (16 GB/512 GB SSD/Windows 10 Home/6 GB Graphics/NVIDIA GeForce GTX 1660 Ti) m15R3 Gaming Laptop  (15.6 inch, Lunar Light, 2.5 kg, With MS Office)"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 223322,
+        "cost": 199990,
+        "discount": "10%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4.9,
+      "reviews":"206 Ratings & 44 Reviews"
     },
     {
       "id": "product2",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"laptop",
+      "brand": "REALME",
+      "gender": "",
+      "url": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/kuwzssw0/computer/o/i/j/rmnb1002-thin-and-light-laptop-realme-original-imag7xdzrygqxndn.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/kuczmvk0/computer/g/3/t/rmnb1001-thin-and-light-laptop-realme-original-imag7gy4hbuvgxfc.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "realme Book",
+        "longTitle": "realme Book(Slim) Intel Evo Core i5 11th Gen - (8 GB/512 GB SSD/Windows 10 Home) RMNB1002 Thin and Light Laptop  (14 inch, Real Blue, 1.38 kg, With MS Office)"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 69999,
+        "cost": 59990,
+        "discount": "20%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4.4,
+      "reviews":"3,862 Ratings & 554 Reviews"
     },
     {
       "id": "product3",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"laptop",
+      "brand": "INFINIX",
+      "gender": "",
+      "url": "https://rukminim1.flixcart.com/image/832/832/kw104nk0/computer/z/7/t/inbook-x1-pro-thin-and-light-laptop-infinix-original-imag8shw6pfzuc4e.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/kwzap3k0/computer/z/r/h/-original-imag9jkfnguhhahz.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/kwgpz0w0/computer/d/9/m/-original-imag94q2pfvysbzh.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/kw104nk0/computer/z/7/t/inbook-x1-pro-thin-and-light-laptop-infinix-original-imag8shw6pfzuc4e.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "INFINIX LAPTOP",
+        "longTitle": "Infinix INBook X1 Core i3 10th Gen - (8 GB/256 GB SSD/Windows 11 Home) XL11 Thin and Light Laptop  (14 inch, Starfall Grey, 1.48 kg)"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 49999,
+        "cost": 29990,
+        "discount": "40%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4.3,
+      "reviews":"2,706 Ratings & 544 Reviews"
     },
     {
       "id": "product4",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"mobile",
+      "brand": "INFINIX",
+      "gender": "",
+      "url": "https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/v/w/k/-original-imageezmre8ymznn.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/c/t/u/-original-imageezmj8zz9zaw.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/s/v/r/-original-imageezmxxhta55h.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/2/y/u/-original-imageezmha3xwg5z.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "infinix Note",
+        "longTitle": "Infinix Note 12 (Jewel Blue, 64 GB)  (4 GB RAM)"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 15999,
+        "cost": 11999,
+        "discount": "25%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": "",
+      "reviews":"Be the first to Review this product"
     },
     {
       "id": "product5",
@@ -264,103 +280,123 @@
     },
     {
       "id": "product13",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"topwear",
+      "brand": "Young trendz",
+      "gender": "Female",
+      "url": "https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/t-shirt/2/9/q/m-reg-whs-taken-white-young-trendz-original-imafw2jfwamqyu9e.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/k6wiefk0/t-shirt/5/4/m/s-whs-taken-white-young-trendz-original-imafp9pngf2rdcsr.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/k6wiefk0/t-shirt/5/4/m/s-whs-taken-white-young-trendz-original-imafp9pnwyv9pmqp.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/krf91u80/t-shirt/r/5/q/m-reg-whs-taken-white-young-trendz-original-imag5859wqbn9qmk.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "Young trendz",
+        "longTitle": "Graphic Print Women Round Neck White T-Shirt"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 1109,
+        "cost": 192,
+        "discount": "82%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 3.9,
+      "reviews":"2,138 ratings and 193 reviews"
     },
     {
       "id": "product14",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"topwear",
+      "brand": "Silkova",
+      "gender": "Female",
+      "url": "https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/p/t/p/m-st01-silkova-original-imagf5fm8rqfkdxe.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/i/z/4/m-st01-silkova-original-imagf5fmzfhkvqv9.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/e/d/d/m-st01-silkova-original-imagf5fmegzykmqn.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/u/y/e/m-st01-silkova-original-imagf5fm3hfqwghy.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "Silkova",
+        "longTitle": "Casual Regular Sleeves Embroidered Women Dark Blue Top"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 1999,
+        "cost": 289,
+        "discount": "85%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4.2,
+      "reviews":"7,545 ratings and 826 reviews"
     },
     {
       "id": "product15",
-      "brand": "REEBOK",
+      "category":"bottomwear",
+      "brand": "Killer",
       "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/g/w/h/32-kjb-1622-killer-original-imag739pyppbm9xv.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/i/i/z/32-kjb-1622-killer-original-imag739pyp9kf7ah.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/l/q/2/32-kjb-1622-killer-original-imag739p36gpehhq.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/a/9/a/32-kjb-1622-killer-original-imag739pbgzagchg.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "Killer Jeans",
+        "longTitle": "Slim Men Light Blue Jeans"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 3299,
+        "cost": 1367,
+        "discount": "58%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Get extra 25% off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4,
+      "reviews":"446 ratings and 45 reviews"
     },
     {
       "id": "product16",
-      "brand": "REEBOK",
+      "category":"bottomwear",
+      "brand": "Killer",
       "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/7/w/v/32-kj-sh-9002-killer-original-imag5qu4vjqeyute.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/n/6/g/32-kj-sh-9002-killer-original-imag5qu4yntgyk89.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/y/z/o/32-kj-sh-9002-killer-original-imag5qu4ugwfhzze.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/l/u/d/32-kj-sh-9002-killer-original-imag5qu4sxcdwwdv.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "Killer Shorts",
+        "longTitle": "Printed Men Brown Chino Shorts"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 2199,
+        "cost": 659,
+        "discount": "70%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Get extra 25% off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4.4,
+      "reviews":"1,156 ratings and 96 reviews"
     },
     {
       "id": "product17",
-      "brand": "REEBOK",
-      "gender": "Male",
-      "url": "https://rukminim1.flixcart.com/image/612/612/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2tcfbk0/t-shirt/9/7/w/m-he3436-reebok-original-image2tyvdjvfyx7.jpeg?q=70",
+      "category":"headphone",
+      "brand": "boat",
+      "gender": "",
+      "url": "https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafn6u7ec8cmk8y.jpeg?q=70",
+      "url2":"https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafg96yhx5n5fey.jpeg?q=70",
+      "url3":"https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafg96yh7pbkxay.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafn6u7ayzetbcd.jpeg?q=70",
       "title": {
-        "shortTitle": "REEBOK",
-        "longTitle": "Solid Men Polo Neck Red T-Shirt"
+        "shortTitle": "boat headphone",
+        "longTitle": "boAt Rockerz 510 Super Extra Bass Bluetooth Headset  (Raging Red, On the Ear)"
       },
       "price": {
-        "mrp": 1199,
-        "cost": 525,
-        "discount": "56%"
+        "mrp": 3490,
+        "cost": 1199,
+        "discount": "65%"
       },
-      "description": "Let music brighten up your mood anytime, anywhere with the boAt 235v2 Fast Charging Bluetooth Headset. This Bluetooth headset features a Call Vibration Alert, a Fast Charging Technology, and Easy Access Controls to listen to and manage your favorite music with ease.",
-      "discount": "Minimum 50% Off",
+      "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
+      "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
-      "rating": 4
+      "rating": 4.4,
+      "reviews":"1,64,468 Ratings & 21,608 Reviews"
     },
     {
       "id": "product18",
