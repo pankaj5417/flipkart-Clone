@@ -1,5 +1,5 @@
 # flipkart-Clone
-An individual project of flipkart clone made by me in 5 days.
+An individual project of flipkart clone made by me in 7 days.
 
 
 
