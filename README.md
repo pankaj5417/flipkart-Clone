@@ -2,9 +2,6 @@
 An individual project of flipkart clone made by me in 5 days.
 
 
-![landing page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6475).png?raw=true)
-
-![main product page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6476).png?raw=true)
 
 ## Technologies Used :
 * React
@@ -28,6 +25,19 @@ An individual project of flipkart clone made by me in 5 days.
 ### Responsive Pages
 * Products Page
 * Cart page
+
+
+![login_page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6491).png?raw=true)
+
+![signup_page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6492).png?raw=true)
+
+![landing page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6487).png?raw=true)
+
+![main_prodcutpage](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6488).png?raw=true)
+
+![product_details_page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6489).png?raw=true)
+
+![cart page](https://github.com/pankaj5417/koovs.com/blob/main/Screenshot%20(6490).png?raw=true)
 
 
 ## Getting Started :
