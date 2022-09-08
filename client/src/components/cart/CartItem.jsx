@@ -40,6 +40,8 @@ const useStyle = makeStyles({
 });
 
 const CartItem = ({ item, removeItemFromCart }) => {
+
+    
     console.log(item)
     const classes = useStyle();
     const fassured = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/fa_62673a.png';
@@ -48,7 +50,7 @@ const CartItem = ({ item, removeItemFromCart }) => {
         <Card className={classes.component}>
             <Box className={classes.leftComponent}>
                 <img src={item.url} className={classes.image} />
-                <GroupButton />
+                <GroupButton item={item}/>
             </Box>
             <Box className={classes.mid}>
                 {/* <Typography>{addEllipsis(item.title.longTitle)}</Typography> */}

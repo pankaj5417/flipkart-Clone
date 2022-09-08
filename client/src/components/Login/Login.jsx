@@ -93,6 +93,7 @@ export default function Login({ open, setOpen,setIsLogin }) {
 
   const authenticateUser=()=>{
     userData.forEach(user=>{
+      localStorage.setItem("user",JSON.stringify(user))
       user.email===login.email&&user.password===login.password?
    
      showUser()
@@ -105,6 +106,8 @@ export default function Login({ open, setOpen,setIsLogin }) {
   const showUser=()=>{
    // setIsLogin(true)
     alert("Login successful")
+    setOpen(false)
+    localStorage.setItem("loginStatus",JSON.stringify({isLogin:true}))
     navigate("/products")
   }
   const handleLoginInput = (e) => {

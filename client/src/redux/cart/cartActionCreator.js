@@ -1,5 +1,5 @@
 import { JSON_API } from "../../url";
-import { ADD_TO_CART, GET_CART_DATA, REMOVE_FROM_CART } from "./cartActionType";
+import { ADD_TO_CART, DECREMENT_ITEM, GET_CART_DATA, INCREMENT_ITEM, REMOVE_FROM_CART } from "./cartActionType";
 
 export const addToCartSuccess = (data) => {
   return {
@@ -10,6 +10,20 @@ export const addToCartSuccess = (data) => {
 export const getCartDataSuccess = (data) => {
   return {
     type: GET_CART_DATA,
+    payload: data,
+  };
+};
+
+export const incrementSuccess = (data) => {
+  return {
+    type: INCREMENT_ITEM,
+    payload: data,
+  };
+};
+
+export const decrementSuccess = (data) => {
+  return {
+    type: DECREMENT_ITEM,
     payload: data,
   };
 };

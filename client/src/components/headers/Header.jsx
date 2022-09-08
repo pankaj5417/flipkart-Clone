@@ -32,6 +32,12 @@ const useStyle = makeStyles({
     fontSize: 10,
     fontStyle: "italic",
   },
+  Search:{
+
+  },
+  headerButton:{
+    width:"50%"
+  }
 });
 const ToolBar = withStyles({
   root: {
@@ -66,8 +72,8 @@ function Header() {
               <img src={subURL} alt="" className={classes.subURL} />
             </Box>
           </Link>
-          <SearchBar />
-          <HeaderButtons />
+          <SearchBar className={classes.Search}/>
+          <HeaderButtons className={classes.headerButton}/>
         </ToolBar>
       </AppBar>
     </div>

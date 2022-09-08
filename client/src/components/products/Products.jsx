@@ -51,12 +51,14 @@ const useStyle = makeStyles({
     boxSizing:"border-box"
   },
   image: {
-    width: "250px",
-    height: 320,
-    padding:"3px"
+    width: "220px",
+    height: "250px",
+    padding:"3px",
+    borderRadius:"2px"
+
   },
   wrapper: {
-    padding: "35px 15px",
+    padding: "35px 20px",
   },
   selectBox: {
     width: "97%",
@@ -307,14 +309,14 @@ console.log("productData",data)
           <Grid
             container
             spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
-            style={{ gap: "20px" }}
+            columns={{ xs:3, sm: 3, md: 3}}
+            style={{ gap: "10px" }}
           >
             {data?.map((item) => (
               <>
                <Link to={`/products/${item.id}`} style={{textDecoration:"none"}}>
 
-                <Box textAlign="left" className={classes.wrapper}>
+                <Box  textAlign="left" className={classes.wrapper}>
                   <img src={item.url} alt="" className={classes.image} />
                   <Typography
                     className={classes.text}

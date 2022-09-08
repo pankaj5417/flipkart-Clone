@@ -16,8 +16,10 @@ const useStyle = makeStyles({
     padding: "5px 40px",
     borderRadius: 2,
     boxShadow: "none",
+   
   },
   wrapper: {
+   
     margin: "0 7% 0 auto",
     display: "flex",
     alignItems: "center",
@@ -38,7 +40,8 @@ function HeaderButtons() {
   const classes = useStyle();
   const {userData}=useSelector(state=>({userData:state.userDetail.userDetails}))
 
-  //const [isLogin,setIsLogin]=useState(false)
+  const loginStatus=JSON.parse(localStorage.getItem("loginStatus"))
+  const userDetails=JSON.parse(localStorage.getItem("user"))
 
   const [open,setOpen]=useState(false)
   const {data}=useSelector(state=>({
@@ -50,12 +53,18 @@ function HeaderButtons() {
     setOpen(true)
   }
   return (
+    <>
+   
     <Box className={classes.wrapper}>
-        <Link to="/login">
+       
+        {
+      loginStatus?<h4>Hello,{userDetails.firstname}</h4>:
+    
       <Button variant="contained" className={classes.login} onClick={()=>{openDialogBox()}}>
         Login
       </Button>
-        </Link>
+        }
+       
         <Link to="/more">
       <Typography style={{ marginTop: 5 }}>More</Typography>
         </Link>
@@ -67,6 +76,7 @@ function HeaderButtons() {
       </Link>
       <Login open={open} setOpen={setOpen}/>
     </Box>
+    </>
   );
 }
 

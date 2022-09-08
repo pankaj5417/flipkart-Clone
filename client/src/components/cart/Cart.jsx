@@ -8,7 +8,7 @@ import {  makeStyles } from "@mui/styles";
 import CartItem from "./CartItem";
 import TotalView from "./TotalView";
 import EmptyCart from "./EmptyCart";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import { JSON_API } from "../../url";
 
 const useStyle = makeStyles(theme => ({
@@ -51,6 +51,7 @@ const useStyle = makeStyles(theme => ({
   export default function Cart() {
   const dispatch=useDispatch()
   const params=useParams()
+  const navigate=useNavigate()
   const {data}=useSelector(state=>({
     // loading:state.cart.loading,
     // err:state.cart.err,
@@ -116,7 +117,7 @@ console.log("cartData",data)
                             ))
                         }
                     <Box className={classes.bottom}>
-                        <Button onClick={() => buyNow()} variant="contained" className={classes.placeOrder}>Place Order</Button>
+                        <Button onClick={() => navigate('/cart/checkout')} variant="contained" className={classes.placeOrder}>Place Order</Button>
                     </Box>
                 </Grid>
                 <Grid item lg={3} md={3} sm={12} xs={12}>

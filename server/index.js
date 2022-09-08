@@ -1,16 +1,35 @@
-import express from "express";
-import Connection from "./database/db.js";
-import dotenv from "dotenv"
+const express=require("express")
+const app=express()
+const mongoose=require("mongoose")
+const dotenv=require('dotenv')
+const morgan=require('morgan')
+const helmet=require('helmet')
 
-import DefaultData from "./default.js"
+const userRoute=require("./routes/user.controller")
+const authRoute=require("./routes/auth.controller")
+const postRoute=require('./routes/post.controller')
 
 dotenv.config()
-const app=express()
-const PORT=8000
-const username=process.env.DB_USERNAME;
-const password=process.env.DB_PASSWORD;
-Connection(username,password)
-app.listen(PORT,()=>console.log(`Server is running on PORT ${PORT}`))
 
-//default data to database
-DefaultData()
+mongoose.connect(process.env.MONGO_URL, (err)=>{
+    if(err){
+        console.log(err)
+    }else
+        console.log("Connected to MongoDB")
+
+})
+
+//middleware
+
+app.use(express.json())
+app.use(helmet())
+app.use(morgan('common'))
+
+app.use("/api/users",userRoute)
+app.use("/api/auth",authRoute)
+app.use('/api/posts',postRoute)
+
+
+app.listen(8000,()=>{
+    console.log("server is running")
+})

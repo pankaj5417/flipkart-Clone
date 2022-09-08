@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { alpha, InputBase, List, ListItem } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-
+import axios from "axios";
 import { Search } from "@mui/icons-material";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import {
   getFilteredData,
   getProductData,
+  getProductSuccess,
 } from "../../redux/product/productActionCreator";
 import { Link } from "react-router-dom";
 const useStyle = makeStyles((theme) => ({
@@ -20,6 +21,9 @@ const useStyle = makeStyles((theme) => ({
     marginLeft: 10,
     width: "38%",
     backgroundColor: "#fff",
+    webkitBoxShadow: "0px 0px 18px -3px rgba(0,0,0,0.75)",
+    mozBoxShadow: "0px 0px 18px -3px rgba(0,0,0,0.75)",
+    boxShadow: "0px 0px 18px -3px rgba(0,0,0,0.75)"
   },
   search: {
     position: "fixed",
@@ -46,12 +50,12 @@ const useStyle = makeStyles((theme) => ({
     width: "100%",
   },
   list: {
-    position: "fixed",
+    position: "absolute",
     width: "100%",
 
     borderRadius: "2px",
     minWidth: "400px",
-    top: 16,
+    top: 7,
     color: "#000",
     background: "#FFFFFF",
     zIndex: "999",
@@ -77,25 +81,30 @@ function SearchBar() {
   console.log("searchdata", data);
 
   const [text, setText] = useState();
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
+  const [searchResult, setSearchResult] = useState();
 
-  const getText = (text) => {
-    setText(text);
-    setOpen(false);
-  };
-
+  
   //const [dataItem, setDataItem] = useState([data]);
 
-  const handleChange = (event) => {
-    let searchString = event.target.value;
-    console.log(searchString);
-    // const filteredData=dataItem.filter(prod=>{
-    // return data.title.shortTitle.toLocaleLowerCase().incudes(searchString)
-
-    //})
-    dispatch(getFilteredData(searchString))
-    //console.log("filteredData",filteredData)
-    /// setDataItem(filteredData)
+  const handleChange = async (event) => {
+   setOpen(false)
+    let searchString = event.target.value.toLocaleLowerCase();
+    console.log(searchString, data);
+    try {
+      const res = await axios.get(
+        "https://flipkart-clone3.herokuapp.com/db/products"
+      );
+      console.log(res.data);
+      setSearchResult(
+        res.data.filter((d) =>
+          d.title.shortTitle.toLocaleLowerCase().includes(searchString)
+        )
+      );
+    } catch (error) {
+      console.log(error);
+    }
+    console.log("searchRes", searchResult);
   };
 
   useEffect(() => {
@@ -114,34 +123,40 @@ function SearchBar() {
               input: classes.inputInput,
             }}
             inputProps={{ "aria-label": "search" }}
-            // onChange={handleChange}
-            onChange={(e) => getText(e.target.value)}
+            onChange={handleChange}
+            // onChange={(e) => getText(e.target.value)}
           />
           <div className={classes.searchIcon}>
             <Search />
           </div>
+         
         </div>
+        <hr />
         <div className={classes.searchList}>
-          <hr />
-
-          {text && (
+          {searchResult && (
             <>
               <List className={classes.list} hidden={open}>
-                {data
-                  .filter((product) =>
-                    product.id.toLowerCase().includes(text.toLowerCase())
-                  )
-                  .map((product) => (
-                    <ListItem className={classes.listItem}>
-                      <Link
-                        to={`/products/${product.id}`}
-                        style={{ textDecoration: "none", color: "inherit" }}
-                        onClick={() => setOpen(true)}
-                      >
-                        {product.title.longTitle}
-                      </Link>
-                    </ListItem>
-                  ))}
+                <hr />
+                {
+                  // data
+                  //   .filter((product) =>
+                  //     product.id.toLowerCase().includes(text.toLowerCase())
+                  //   )
+
+                  searchResult.map((product) => (
+                    <>
+                      <ListItem>
+                        <Link
+                          to={`/products/${product.id}`}
+                          style={{ textDecoration: "none", color: "inherit" }}
+                          onClick={() => setOpen(true)}
+                        >
+                          {product.title.shortTitle}
+                        </Link>
+                      </ListItem>
+                    </>
+                  ))
+                }
               </List>
             </>
           )}

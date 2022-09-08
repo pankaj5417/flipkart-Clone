@@ -40,12 +40,12 @@
   "products": [
     {
       "id": "product1",
-      "category":"laptop",
+      "category": "laptop",
       "brand": "ALIENWARE",
       "gender": "",
       "url": "https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn39jhwfdwp.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn3zpeu2att.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn3zpeu2att.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn3zpeu2att.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/612/612/kcauaa80/computer/8/k/e/alienware-original-imaftgn3zpeu2att.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/kcauaa80/computer/8/k/e/alienware-original-imaftgn37g4vzqmy.jpeg?q=70",
       "title": {
         "shortTitle": "ALIENWARE",
@@ -60,16 +60,16 @@
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": 4.9,
-      "reviews":"206 Ratings & 44 Reviews"
+      "reviews": "206 Ratings & 44 Reviews"
     },
     {
       "id": "product2",
-      "category":"laptop",
+      "category": "laptop",
       "brand": "REALME",
       "gender": "",
-      "url": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/kuwzssw0/computer/o/i/j/rmnb1002-thin-and-light-laptop-realme-original-imag7xdzrygqxndn.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/kuczmvk0/computer/g/3/t/rmnb1001-thin-and-light-laptop-realme-original-imag7gy4hbuvgxfc.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/4/b/s/rmnb1001-thin-and-light-laptop-realme-original-imag5zhg9hggwehv.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/kuwzssw0/computer/o/i/j/rmnb1002-thin-and-light-laptop-realme-original-imag7xdzrygqxndn.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/kuczmvk0/computer/g/3/t/rmnb1001-thin-and-light-laptop-realme-original-imag7gy4hbuvgxfc.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ksez24w0/computer/h/8/9/rmnb1001-thin-and-light-laptop-realme-original-imag5zhgcstmjbxg.jpeg?q=70",
       "title": {
         "shortTitle": "realme Book",
@@ -84,16 +84,16 @@
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": 4.4,
-      "reviews":"3,862 Ratings & 554 Reviews"
+      "reviews": "3,862 Ratings & 554 Reviews"
     },
     {
       "id": "product3",
-      "category":"laptop",
+      "category": "laptop",
       "brand": "INFINIX",
       "gender": "",
-      "url": "https://rukminim1.flixcart.com/image/832/832/kw104nk0/computer/z/7/t/inbook-x1-pro-thin-and-light-laptop-infinix-original-imag8shw6pfzuc4e.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/kwzap3k0/computer/z/r/h/-original-imag9jkfnguhhahz.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/kwgpz0w0/computer/d/9/m/-original-imag94q2pfvysbzh.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/kwzap3k0/computer/z/r/h/-original-imag9jkfnguhhahz.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/kwzap3k0/computer/z/r/h/-original-imag9jkfnguhhahz.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/kwgpz0w0/computer/d/9/m/-original-imag94q2pfvysbzh.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/kw104nk0/computer/z/7/t/inbook-x1-pro-thin-and-light-laptop-infinix-original-imag8shw6pfzuc4e.jpeg?q=70",
       "title": {
         "shortTitle": "INFINIX LAPTOP",
@@ -108,31 +108,31 @@
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": 4.3,
-      "reviews":"2,706 Ratings & 544 Reviews"
+      "reviews": "2,706 Ratings & 544 Reviews"
     },
     {
       "id": "product4",
-      "category":"mobile",
-      "brand": "INFINIX",
+      "category": "mobile",
+      "brand": "vivo",
       "gender": "",
-      "url": "https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/v/w/k/-original-imageezmre8ymznn.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/c/t/u/-original-imageezmj8zz9zaw.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/s/v/r/-original-imageezmxxhta55h.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l3929ow0/mobile/2/y/u/-original-imageezmha3xwg5z.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/l2p23rk0/mobile/v/w/i/-original-imagdznhbgw63xhv.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/l2p23rk0/mobile/d/d/x/-original-imagdznhpp73pyhu.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/l2p23rk0/mobile/b/4/n/-original-imagdznhbsk6qdsf.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l2p23rk0/mobile/l/k/v/-original-imagdznhtzegmbwr.jpeg?q=70",
       "title": {
-        "shortTitle": "infinix Note",
-        "longTitle": "Infinix Note 12 (Jewel Blue, 64 GB)  (4 GB RAM)"
+        "shortTitle": "vovo T1",
+        "longTitle": "vivo T1 44W (Ice Dawn, 128 GB)  (8 GB RAM)"
       },
       "price": {
-        "mrp": 15999,
-        "cost": 11999,
-        "discount": "25%"
+        "mrp": 23990,
+        "cost": 17999,
+        "discount": "24%"
       },
       "description": "If you are searching for a laptop that can make your gaming experience smooth, then this Alienware laptop will be ideal for you. It comes with the Advanced Alienware Cryo-Tech, so rest assured, the gaming performance offered will be seamless. It is even equipped with an efficient keyboard that can enhance your usage. What’s more, it has a surface coating which keeps it away from stains.",
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": "",
-      "reviews":"Be the first to Review this product"
+      "reviews": "78 Ratings & 2 Reviews"
     },
     {
       "id": "product5",
@@ -153,8 +153,8 @@
     },
     {
       "id": "product6",
-      "url": "https://rukminim1.flixcart.com/image/150/150/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/kk01pjk0/fan/d/d/l/tiktik-quiet-portable-table-fan-zigma-original-imafzg7ftzuckpad.jpeg?q=70",
       "title": {
         "shortTitle": "Table Fans",
         "longTitle": "Portable 300 mm Ultra High Speed 3 Blade Table Fan  (Black, Pack of 1)"
@@ -170,8 +170,8 @@
     },
     {
       "id": "product7",
-      "url": "https://rukminim1.flixcart.com/image/150/150/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70",
-      "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kcgk1ow0/headphone/n/u/a/235v2-fast-charging-boat-original-imaftk6us4af7bca.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/l31x2fk0/headphone/m/5/v/-original-image9ehhvpt8vzt.jpeg?q=70",
+      "detailUrl": "https://rukminim1.flixcart.com/image/832/832/l31x2fk0/headphone/m/5/v/-original-image9ehhvpt8vzt.jpeg?q=70",
       "title": {
         "shortTitle": "Headphones",
         "longTitle": "boAt Rockerz 235v2 with ASAP charging Version 5.0 Bluetooth Headset "
@@ -187,7 +187,7 @@
     },
     {
       "id": "product8",
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA-LUMo56BR6JFz5H4sFgONh2Vw-XTh9me7A&usqp=CAU",
+      "url": "https://rukminim1.flixcart.com/image/832/832/kst9gnk0/shirt/u/a/t/l-frml-st2-vebnor-original-imag6apmphuh2ayu.jpeg?q=70",
       "detailUrl": "https://rukminim2.flixcart.com/image/612/612/kst9gnk0/shirt/u/a/t/l-frml-st2-vebnor-original-imag6apmphuh2ayu.jpeg?q=70",
       "title": {
         "shortTitle": "Shirt",
@@ -280,12 +280,12 @@
     },
     {
       "id": "product13",
-      "category":"topwear",
+      "category": "topwear",
       "brand": "Young trendz",
       "gender": "Female",
       "url": "https://rukminim1.flixcart.com/image/832/832/kfoapow0-0/t-shirt/2/9/q/m-reg-whs-taken-white-young-trendz-original-imafw2jfwamqyu9e.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/k6wiefk0/t-shirt/5/4/m/s-whs-taken-white-young-trendz-original-imafp9pngf2rdcsr.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/k6wiefk0/t-shirt/5/4/m/s-whs-taken-white-young-trendz-original-imafp9pnwyv9pmqp.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/k6wiefk0/t-shirt/5/4/m/s-whs-taken-white-young-trendz-original-imafp9pngf2rdcsr.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/k6wiefk0/t-shirt/5/4/m/s-whs-taken-white-young-trendz-original-imafp9pnwyv9pmqp.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/krf91u80/t-shirt/r/5/q/m-reg-whs-taken-white-young-trendz-original-imag5859wqbn9qmk.jpeg?q=70",
       "title": {
         "shortTitle": "Young trendz",
@@ -300,16 +300,16 @@
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": 3.9,
-      "reviews":"2,138 ratings and 193 reviews"
+      "reviews": "2,138 ratings and 193 reviews"
     },
     {
       "id": "product14",
-      "category":"topwear",
+      "category": "topwear",
       "brand": "Silkova",
       "gender": "Female",
       "url": "https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/p/t/p/m-st01-silkova-original-imagf5fm8rqfkdxe.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/i/z/4/m-st01-silkova-original-imagf5fmzfhkvqv9.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/e/d/d/m-st01-silkova-original-imagf5fmegzykmqn.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/i/z/4/m-st01-silkova-original-imagf5fmzfhkvqv9.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/e/d/d/m-st01-silkova-original-imagf5fmegzykmqn.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/km6mxe80/top/u/y/e/m-st01-silkova-original-imagf5fm3hfqwghy.jpeg?q=70",
       "title": {
         "shortTitle": "Silkova",
@@ -324,16 +324,16 @@
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": 4.2,
-      "reviews":"7,545 ratings and 826 reviews"
+      "reviews": "7,545 ratings and 826 reviews"
     },
     {
       "id": "product15",
-      "category":"bottomwear",
+      "category": "bottomwear",
       "brand": "Killer",
       "gender": "Male",
       "url": "https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/g/w/h/32-kjb-1622-killer-original-imag739pyppbm9xv.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/i/i/z/32-kjb-1622-killer-original-imag739pyp9kf7ah.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/l/q/2/32-kjb-1622-killer-original-imag739p36gpehhq.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/i/i/z/32-kjb-1622-killer-original-imag739pyp9kf7ah.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/l/q/2/32-kjb-1622-killer-original-imag739p36gpehhq.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ktuewsw0/jean/a/9/a/32-kjb-1622-killer-original-imag739pbgzagchg.jpeg?q=70",
       "title": {
         "shortTitle": "Killer Jeans",
@@ -348,16 +348,16 @@
       "discount": "Get extra 25% off",
       "tagline": "Grab Now!",
       "rating": 4,
-      "reviews":"446 ratings and 45 reviews"
+      "reviews": "446 ratings and 45 reviews"
     },
     {
       "id": "product16",
-      "category":"bottomwear",
+      "category": "bottomwear",
       "brand": "Killer",
       "gender": "Male",
       "url": "https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/7/w/v/32-kj-sh-9002-killer-original-imag5qu4vjqeyute.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/n/6/g/32-kj-sh-9002-killer-original-imag5qu4yntgyk89.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/y/z/o/32-kj-sh-9002-killer-original-imag5qu4ugwfhzze.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/n/6/g/32-kj-sh-9002-killer-original-imag5qu4yntgyk89.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/y/z/o/32-kj-sh-9002-killer-original-imag5qu4ugwfhzze.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/ks3jjbk0/short/l/u/d/32-kj-sh-9002-killer-original-imag5qu4sxcdwwdv.jpeg?q=70",
       "title": {
         "shortTitle": "Killer Shorts",
@@ -372,16 +372,16 @@
       "discount": "Get extra 25% off",
       "tagline": "Grab Now!",
       "rating": 4.4,
-      "reviews":"1,156 ratings and 96 reviews"
+      "reviews": "1,156 ratings and 96 reviews"
     },
     {
       "id": "product17",
-      "category":"headphone",
+      "category": "headphone",
       "brand": "boat",
       "gender": "",
       "url": "https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafn6u7ec8cmk8y.jpeg?q=70",
-      "url2":"https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafg96yhx5n5fey.jpeg?q=70",
-      "url3":"https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafg96yh7pbkxay.jpeg?q=70",
+      "url2": "https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafg96yhx5n5fey.jpeg?q=70",
+      "url3": "https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafg96yh7pbkxay.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/832/832/k51cpe80pkrrdj/headphone-refurbished/y/b/c/c-rockerz-on-ear-510-boat-original-imafn6u7ayzetbcd.jpeg?q=70",
       "title": {
         "shortTitle": "boat headphone",
@@ -396,7 +396,7 @@
       "discount": "Minimum 10% Off",
       "tagline": "Grab Now!",
       "rating": 4.4,
-      "reviews":"1,64,468 Ratings & 21,608 Reviews"
+      "reviews": "1,64,468 Ratings & 21,608 Reviews"
     },
     {
       "id": "product18",
@@ -434,7 +434,7 @@
     },
     {
       "id": "product20",
-      "url": "https://rukminim1.flixcart.com/image/150/150/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
+      "url": "https://rukminim1.flixcart.com/image/832/832/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
       "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kohigsw0/resistance-tube/c/s/e/new-adjustable-single-resistance-tube-multicolor-na-ajro-deal-original-imag2xg88mhmwxz5.jpeg?q=70",
       "title": {
         "shortTitle": "Fitness Gear",
